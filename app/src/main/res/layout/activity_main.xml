@@ -9,22 +9,23 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
-        android:layout_marginBottom="58dp"
+        android:layout_width="176dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toTopOf="@+id/weight"
         app:layout_constraintStart_toStartOf="@+id/weight"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/avatar" />
 
     <EditText
         android:id="@+id/weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="327dp"
+        android:layout_marginTop="256dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Kilos (xx.x)" />
@@ -36,9 +37,9 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="Estatura (x.xx)"
         app:layout_constraintStart_toStartOf="@+id/weight"
-        app:layout_constraintTop_toBottomOf="@+id/weight" />
+        app:layout_constraintTop_toBottomOf="@+id/weight"
+        tools:text="Estatura (x.xx)" />
 
     <Button
         android:id="@+id/calcular"
@@ -63,9 +64,10 @@
         android:id="@+id/range"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="93dp"
+        android:layout_marginBottom="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imc"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
